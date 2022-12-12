@@ -9,6 +9,7 @@ body {
     grid-template-rows: 20% 1fr;
     height: 100vh;
     margin: 0 0;
+    padding: 0;
 }
 
 .dashboard {
@@ -146,5 +147,148 @@ body {
     z-index: -2;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+    padding: 5px 20px;
+    gap: 20px;
 }
 
+.projects {
+    display: grid;
+    grid-template-rows: 35px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 90%;
+    
+}
+
+h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    grid-column: 1 / 3;
+    align-self: end;
+    margin-bottom: -10px;
+}
+
+.card {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 0px grey;
+    border-inline-start: 10px solid goldenrod;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+h4 {
+    margin-bottom: -10px;
+}
+
+.card p {
+    color: grey;
+    font-weight: 400;
+}
+
+.sideBar {
+    height: 90%;
+    display: grid;
+    grid-template-rows: 35px 1fr 35px 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.announcementPanel {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 0px grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.announcementPanel p {
+    color: grey;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+h5 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.site, .community {
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.trendingPanel {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 0px grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    height: 100%;
+    gap: 25px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 50px;
+    gap: 10px;
+}
+
+.userIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.userText {
+    align-self: center;
+    grid-row: 1 / 3;
+}
+
+.littleUser {
+    font-weight: 400;
+}
+
+.flair {
+    color: grey;
+    font-size: 14px;
+}
+
+.icon1 {
+    background-color: skyblue;
+}
+
+.icon2 {
+    background-color: yellow;
+}
+
+.icon3 {
+    background-color: grey;
+}
+
+.icon4 {
+    background-color: palevioletred;
+}
